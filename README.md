@@ -13,8 +13,6 @@ UCI HAR: raw 9-channel inertial windows (128 x 9), 6 activities, official subjec
 |---|---|---|
 | `01_HAR_CNN_BiLSTM_Hybrid.ipynb` | CNN baseline, CNN+BiLSTM (raw), Hybrid (raw CNN-BiLSTM branch + 561 engineered features), 5-seed ensemble | Best results |
 | `02_HAR_CNN_LSTM_Attention.ipynb` | CNN baseline, CNN+LSTM, CNN+LSTM+Self-Attention | Raw signals only |
-| `03_HAR_LSTM_CNN_XiaStyle.ipynb` | LSTM -> CNN, following Xia et al. | Saved without outputs |
-| `04_HAR_Xia_Faithful.ipynb` | Faithful re-implementation of Xia et al. (2 x LSTM-32 -> Conv -> GAP -> BN) | Saved without outputs |
 
 ## Results (UCI HAR official test set)
 | Model | Accuracy | Macro F1 |
@@ -32,9 +30,8 @@ Sitting vs. standing is the hardest pair to separate in all models.
 
 ## Comparison with Xia et al. (2020)
 Xia et al. feed raw signals to two stacked LSTM layers (32 units), then Conv(64) -> max-pool -> Conv(128) -> GAP -> BN
-(about 49.6k parameters). Our hybrid ensemble reaches a similar accuracy but is **not a reproduction**: it puts the CNN
-before the recurrent layers, adds 561 engineered features and averages five seeds. Notebook 04 re-implements the paper's
-structure directly. Note the paper used its own train/test split, so numbers are not strictly like-for-like.
+(about 49.6k parameters). Our hybrid ensemble reaches a similar accuracy but is **not a reproduction of the paper's model**: it puts the CNN
+before the recurrent layers, adds 561 engineered features and averages five seeds. Note the paper used its own train/test split, so numbers are not strictly like-for-like.
 
 ## Run it
 ```bash
