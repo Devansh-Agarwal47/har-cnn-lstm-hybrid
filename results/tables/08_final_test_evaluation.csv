@@ -1,0 +1,5 @@
+Model,Accuracy,Macro_Precision,Macro_Recall,Macro_F1,Mean_Specificity,Macro_ROC_AUC,Accuracy_Percent
+CNN_Baseline,0.8996,0.9138,0.9006,0.8977,0.9798,0.9912,89.96
+CNN_BiLSTM_Raw,0.888,0.9058,0.8889,0.8845,0.9774,0.9901,88.8
+Hybrid_single_seed,0.9488,0.9524,0.9488,0.9484,0.9897,0.9962,94.88
+Hybrid_Ensemble,0.9569,0.958,0.9573,0.957,0.9914,0.9985,95.69

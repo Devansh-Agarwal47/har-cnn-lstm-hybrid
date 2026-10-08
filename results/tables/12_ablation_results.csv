@@ -1,0 +1,5 @@
+Experiment,BiLSTM,561_Feature_Branch,Augmentation,Seed_Ensemble,Accuracy,Macro_F1
+CNN only (raw),No,No,No,No,0.899559,0.897717
+CNN + BiLSTM (raw only),Yes,No,Yes,No,0.888022,0.88447
+Hybrid: + 561-feature branch (single seed),Yes,Yes,Yes,No,0.948761,0.948425
+Hybrid ensemble (x5),Yes,Yes,Yes,Yes (x5),0.956905,0.956971

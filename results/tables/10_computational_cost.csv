@@ -1,0 +1,8 @@
+Model,Trainable_Parameters,Training_Time_Seconds,Epochs_Run
+CNN_Baseline,53446,101.6,17
+CNN_BiLSTM_Raw,393126,1099.8,17
+Hybrid_CNN_BiLSTM,376390,866.4,30
+Hybrid_seed7,376390,599.3,19
+Hybrid_seed123,376390,532.7,17
+Hybrid_seed1,376390,975.4,34
+Hybrid_seed2,376390,1430.2,54
