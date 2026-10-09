@@ -11,9 +11,9 @@ The project compares CNN, CNN+LSTM, CNN+Self-Attention, and CNN+BiLSTM models. I
 | Field | Details |
 |---|---|
 | Name | Devansh Agarwal |
-| Registration No. | YOUR_REGISTRATION_NUMBER |
+| Registration No. | 2430010389 |
 | Branch | Data Science |
-| Batch | F |
+| Batch | E |
 | GitHub Username | Devansh-Agarwal47 |
 | Course | DSE3120 – Deep Learning |
 | University | Manipal University Jaipur |
